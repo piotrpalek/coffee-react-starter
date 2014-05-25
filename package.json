@@ -1,35 +1,33 @@
 {
   "name": "gulp-starter-react-cjsx",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Gulp starter with common tasks and scenarios for ReactJS with cjsx (coffee + jsx support)",
   "repository": {
     "type": "git",
     "url": "https://github.com/piotrpalek/gulp-starter"
   },
   "browser": {
-    "underscore": "backbone/node_modules/underscore",
-    "plugin": "./src/javascript/vendor/jquery-plugin.js"
+    "underscore": "backbone/node_modules/underscore"
   },
   "browserify": {
     "transform": [
       "browserify-shim",
       "cjsxify",
       "hbsfy"
-    ]
+    ],
+    "extensions": [".cjsx"],
+    "debug": true
   },
   "browserify-shim": {
-    "plugin": {
-      "exports": "plugin",
-      "depends": [
-        "jquery:$"
-      ]
-    }
+    "jquery": "$",
+    "underscore": "_"
   },
   "devDependencies": {
     "browserify-shim": "~3.4.1",
     "browserify": "~3.36.0",
-    "cjsxify": "~0.6.0",
+    "cjsxify": "^0.2.3",
     "connect": "~2.14.3",
+    "gulp-sass": "^0.7.1",
     "gulp-changed": "~0.3.0",
     "gulp-imagemin": "~0.1.5",
     "gulp-livereload": "~1.2.0",
@@ -40,7 +38,7 @@
     "vinyl-source-stream": "~0.1.1"
   },
   "dependencies": {
-    "backbone": "~1.1.2",
-    "jquery": "~2.1.0"
+    "react": "^0.10.0",
+    "underscore": "^1.6.0"
   }
 }
