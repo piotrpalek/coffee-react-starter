@@ -1,4 +1,6 @@
-gulp-starter
+TODO: UPDATE README (this readme is still the one from gulp-starter)
+
+gulp-starter for ReactJS and CoffeScript
 ============
 
 Starter Gulp + Browserify project with examples of how to accomplish some common tasks and workflows. Read the [blog post](http://viget.com/extend/gulp-browserify-starter-faq) for more context, and check out the [Wiki]() for some good background knowledge.

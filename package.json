@@ -1,10 +1,10 @@
 {
-  "name": "gulp-starter",
-  "version": "0.1.1",
-  "description": "Gulp starter with common tasks and scenarios",
+  "name": "gulp-starter-react-cjsx",
+  "version": "0.1",
+  "description": "Gulp starter with common tasks and scenarios for ReactJS with cjsx (coffee + jsx support)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/greypants/gulp-starter.git"
+    "url": "https://github.com/piotrpalek/gulp-starter"
   },
   "browser": {
     "underscore": "backbone/node_modules/underscore",
@@ -13,7 +13,7 @@
   "browserify": {
     "transform": [
       "browserify-shim",
-      "coffeeify",
+      "cjsxify",
       "hbsfy"
     ]
   },
@@ -28,10 +28,9 @@
   "devDependencies": {
     "browserify-shim": "~3.4.1",
     "browserify": "~3.36.0",
-    "coffeeify": "~0.6.0",
+    "cjsxify": "~0.6.0",
     "connect": "~2.14.3",
     "gulp-changed": "~0.3.0",
-    "gulp-compass": "~1.1.8",
     "gulp-imagemin": "~0.1.5",
     "gulp-livereload": "~1.2.0",
     "gulp-notify": "~1.2.4",
