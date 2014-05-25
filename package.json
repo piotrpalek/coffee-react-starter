@@ -48,7 +48,9 @@
     "test": "jest"
   },
   "jest": {
-    "scriptPreprocessor": "preprocessor.js",
-    "testFileExtensions": ["coffee", "js", "cjsx"]
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testDirectoryName": "specs",
+    "testFileExtensions": ["coffee", "js", "cjsx"],
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
   }
 }
